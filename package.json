@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "standard",
-    "start": ""
+    "build": "webpack js/ClientApp.js public/bundle.js"
   },
   "author": "",
   "license": "MIT",

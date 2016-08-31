@@ -6,7 +6,7 @@ const Search = () => (
   <div className='container'>
     <div className='shows'>
       {data.shows.map((show) => (
-        <ShowCard key={show.imdbID} show={show} />
+        <ShowCard key={show.imdbID} {...show} />
       ))}
     </div>
   </div>

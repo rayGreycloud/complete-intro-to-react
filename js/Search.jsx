@@ -20,7 +20,9 @@ const Search = React.createClass({
         </header>
         <div className='shows'>
           {data.shows
-            .filter((show) => `${show.title} 0${show.description}`.toUpperCase().indexOf(this.state.searchTerm.toUpperCase()) >= 0)
+            .filter((show) => `${show.title} 0${show.description}`
+              .toUpperCase()
+              .indexOf(this.state.searchTerm.toUpperCase()) >= 0)
             .map((show) => (
               <ShowCard key={show.imdbID} {...show} />
           ))}

@@ -3,15 +3,15 @@ const ShowCard = require('./ShowCard')
 const data = require('../public/data')
 
 const Search = React.createClass({
-  getInitialState() {
+  getInitialState () {
     return {
       searchTerm: 'this is the search term'
     }
   },
-  handleSearchTermEvent(event) {
-    this.setState({ searchTerm: event.target.value})
+  handleSearchTermEvent (event) {
+    this.setState({ searchTerm: event.target.value })
   },
-  render() {
+  render () {
     return (
       <div className='container'>
         <header className='header'>

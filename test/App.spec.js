@@ -18,7 +18,7 @@ describe('<Search />', () => {
     expect(wrapper.find(ShowCard).length).to.equal(shows.length)
   })
 
-  it('should filter correctly given new state',  () => {
+  it('should filter correctly given new state', () => {
     const wrapper = mount(<Search />)
     const input = wrapper.find('.search-input')
     input.node.value = 'house'

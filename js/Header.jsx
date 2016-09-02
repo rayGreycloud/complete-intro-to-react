@@ -10,6 +10,9 @@ const Header = React.createClass({
             sVideo
           </Link>
         </h1>
+        <h2 className='header-back'>
+          <Link to='/search'>Back</Link>
+        </h2>
       </header>
     )
   }

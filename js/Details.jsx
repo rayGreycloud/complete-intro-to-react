@@ -6,11 +6,16 @@ class Details extends Component {
     return (
       <div style={{textAlign: 'left'}} className='container'>
         <pre><code>
-          {JSON.stringify(this.props.params, null, 4)}
+          {JSON.stringify(this.props.params, null)}
         </code></pre>
       </div>
     )
   }
+}
+const { object } = React.propTypes
+
+Details.propTypes = {
+  params: object
 }
 
 module.exports = Details

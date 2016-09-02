@@ -4,8 +4,10 @@ const { Component } = require('react')
 class Details extends Component {
   render () {
     return (
-      <div className='container'>
-        <h1>This is the Details Component</h1>
+      <div style={{textAlign: 'left'}} className='container'>
+        <pre><code>
+          {JSON.stringify(this.props.params, null, 4)}
+        </code></pre>
       </div>
     )
   }

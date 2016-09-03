@@ -21,7 +21,7 @@ const reduceSearchTerm = (state, action) => {
   return newState
 }
 
-// Use this for production instead of below
+// Use this for production instead of Redux Hooks
 // const store = redux.createStore(rootReducer)
 
 // Hooks for Redux Dev Tools = dev env only
@@ -43,4 +43,4 @@ const mapDispatchToProps = (dispatch) => {
 
 const connector = reactRedux.connect(mapStateToProps, mapDispatchToProps)
 
-module.exports = { connector, store }
+module.exports = { connector, store, rootReducer }

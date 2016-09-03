@@ -21,7 +21,13 @@ const reduceSearchTerm = (state, action) => {
   return newState
 }
 
-const store = redux.createStore(rootReducer)
+// Use this for production instead of below
+// const store = redux.createStore(rootReducer)
+
+// Hooks for Redux Dev Tools = dev env only
+const store = redux.createStore(rootReducer, initialState, redux.compose(
+  typeof window === 'object' &&  typeof window.devToolsExtension !== 'undefined' ? window.devToolsExtension() : (f) => f
+))
 
 const mapStateToProps = (state) => {
   return { searchTerm: state.searchTerm }

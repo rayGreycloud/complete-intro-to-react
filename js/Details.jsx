@@ -5,7 +5,7 @@ const Header = require('./Header')
 const { connector } = require('./Store')
 
 class Details extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
 
     this.state = {
@@ -31,7 +31,7 @@ class Details extends Component {
     if (this.state.omdbData.imdbRating) {
       rating = <h3 className='video-rating'>
           {this.state.omdbData.imdbRating}
-        </h3>
+      </h3>
     }
     return (
       <div className='container'>

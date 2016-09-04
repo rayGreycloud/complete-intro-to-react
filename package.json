@@ -54,5 +54,10 @@
   "repository": {
     "type": "git",
     "url": ""
+  },
+  "standard": {
+    "ignore": [
+      "/public/*.bundle.js"
+    ]
   }
 }
